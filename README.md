@@ -11,16 +11,16 @@ Check script.js for the code to enclose in script tags.
 
 
 1) Begin by adding the following scripts to your website's header file.
-
+```html
 <script type='text/javascript' src="https://knockoutjs.com/downloads/knockout-2.2.1.js"></script>
 <script type='text/javascript' src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type='text/javascript' onload="ping()"></script>  
-
+```
 1a) the last script in the above list is to call the function. It will not work until all below steps have been completed.
 
 
 2) Add the following script to your web page. Either inside your HTML file or if using WordPress it works in a text element. 
-
+```html
 <script>
 $( document ).ready(function() { 
     function ping(ip, callback) {
@@ -86,7 +86,7 @@ $( document ).ready(function() {
         });
     
     </script>
-    
+   ``` 
  3) Add the following code inside the area of your website you would like the result of [Offline : Checking: Online ] to display.
  
  <div data-bind="foreach:servers">
